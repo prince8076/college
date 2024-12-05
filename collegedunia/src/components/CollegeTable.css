@@ -43,7 +43,12 @@
   border-radius: 4px; 
 }
 
+.hover-row:hover .trapezium-flag {
+  display: block;
+}
+
 .trapezium-flag {
+  display: none; 
   position: absolute;
   top: -10px;
   left: 50%;
