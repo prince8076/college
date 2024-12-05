@@ -142,6 +142,9 @@ const CollegeTable = () => {
                     ))}
                 </tbody>
             </table>
+            {visibleRows < filteredColleges.length && (
+                <div className="loading-message">Loading more colleges...</div>
+            )}
         </div>
     );
 };
