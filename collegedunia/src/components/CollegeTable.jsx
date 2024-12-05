@@ -95,8 +95,8 @@ const CollegeTable = () => {
                                 <div className="college-info">
                                     <h3>{college.name}</h3>
                                     <p>{college.location}</p>
-                                    <span className="course-badge">{college.course}</span>
-                                    <p>{college.cutoff}</p>
+                                    <span className="course-badge">{college.course} <p>{college.cutoff}</p></span>
+
                                     <div className="actions">
                                         <a href="#" className="apply-btn">
                                             Apply Now
@@ -111,7 +111,7 @@ const CollegeTable = () => {
                                 </div>
                             </td>
                             <td>
-                                <span className="fees">₹{college.fees.toLocaleString()}</span>
+                                <span className="fees">{college.fees.toLocaleString()}</span>
                                 <p>MBA/PGDM - total fees</p>
                                 <a href="#" className="compare-link">
                                     Compare Fees
@@ -119,17 +119,20 @@ const CollegeTable = () => {
                             </td>
                             <td>
                                 <span className="placement">
-                                    ₹{college.averagePackage.toLocaleString()}
+                                    {college.averagePackage.toLocaleString()}
                                 </span>
                                 <p>Average Package</p>
                                 <span className="placement">
-                                    ₹{college.highestPackage.toLocaleString()}
+                                    {college.highestPackage.toLocaleString()}
                                 </span>
                                 <p>Highest Package</p>
+                                <a href="#" className="compare-link">
+                                    Compare Placement
+                                </a>
                             </td>
                             <td>
                                 <span className="user-rating">{college.userReviews} / 10</span>
-                                <p>Based on {college.reviewCount}</p>
+                                <p>Based on {college.reviewCount} User Reviews</p>
                             </td>
                             <td>
                                 <p>{college.ranking}</p>
