@@ -1,0 +1,204 @@
+.table-container {
+  width: 90%;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+.college-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.college-table th,
+.college-table td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.college-table th {
+  background-color: #eaf3f5;
+  color: #007b83;
+  font-size: 14px;
+}
+
+.college-table td {
+  font-size: 14px;
+}
+
+.college-logo-container {
+  position: relative;
+  display: inline-block;
+  width: 50px; 
+  height: 50px;
+}
+
+.college-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px; 
+}
+
+.trapezium-flag {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f04e30;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 8px;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  z-index: 2;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cd-rank {
+  font-weight: bold;
+  font-size: 12px;
+  color: #007b83;
+  background: #eaf3f5;
+  padding: 4px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+
+
+.hover-row:hover {
+  background-color: #fef6f6;
+  cursor: pointer;
+  position: relative;
+}
+
+.hover-row:hover .featured-flag {
+  display: block;
+}
+
+
+
+.college-table tbody tr:hover {
+  background-color: #FDF3EC;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.rating-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #28a745;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+
+.college-info h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #007b83;
+}
+
+.college-info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.course-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #ffeecb;
+  color: #d97706;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.apply-btn {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-link {
+  color: #007b83;
+  text-decoration: none;
+}
+
+
+.fees {
+  font-weight: bold;
+  color: #007b83;
+}
+
+.placement {
+  font-weight: bold;
+  color: #333;
+}
+
+.placement-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #ffeecb;
+  color: #d97706;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+.user-rating {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.highlight {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #fff8e1;
+  color: #ff9800;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+.more-rankings {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #eaf3f5;
+  color: #007b83;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .college-table th,
+  .college-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
