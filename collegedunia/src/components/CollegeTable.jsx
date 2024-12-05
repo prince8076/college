@@ -59,29 +59,10 @@ const CollegeTable = () => {
                     className="search-input"
                 />
                 <div className="sort-buttons">
-                    <button
-                        onClick={() => handleSort("rank")}
-                        className={sortKey === "rank" ? "active-sort" : ""}
-                    >
-                        Sort by CD Rank {sortKey === "rank" && (sortOrder === "asc" ? "↑" : "↓")}
-                    </button>
-                    <button
-                        onClick={() => handleSort("rating")}
-                        className={sortKey === "rating" ? "active-sort" : ""}
-                    >
-                        Sort by Rating {sortKey === "rating" && (sortOrder === "asc" ? "↑" : "↓")}
-                    </button>
-                    <button
-                        onClick={() => handleSort("fees")}
-                        className={sortKey === "fees" ? "active-sort" : ""}
-                    >
-                        Sort by Fees {sortKey === "fees" && (sortOrder === "asc" ? "↑" : "↓")}
-                    </button>
-                    <button
-                        onClick={() => handleSort("userReviews")}
-                        className={sortKey === "userReviews" ? "active-sort" : ""}
-                    >
-                        Sort by User Reviews {sortKey === "userReviews" && (sortOrder === "asc" ? "↑" : "↓")}
+                    <button onClick={() => handleSort("rating")}>Sort by Rating</button>
+                    <button onClick={() => handleSort("fees")}>Sort by Fees</button>
+                    <button onClick={() => handleSort("userReviews")}>
+                        Sort by User Reviews
                     </button>
                 </div>
             </div>
@@ -115,6 +96,18 @@ const CollegeTable = () => {
                                     <h3>{college.name}</h3>
                                     <p>{college.location}</p>
                                     <span className="course-badge">{college.course}</span>
+                                    <p>{college.cutoff}</p>
+                                    <div className="actions">
+                                        <a href="#" className="apply-btn">
+                                            Apply Now
+                                        </a>
+                                        <a href="#" className="download-link">
+                                            Download Brochure
+                                        </a>
+                                        <label>
+                                            <input type="checkbox" /> Add to Compare
+                                        </label>
+                                    </div>
                                 </div>
                             </td>
                             <td>
