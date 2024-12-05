@@ -59,10 +59,29 @@ const CollegeTable = () => {
                     className="search-input"
                 />
                 <div className="sort-buttons">
-                    <button onClick={() => handleSort("rating")}>Sort by Rating</button>
-                    <button onClick={() => handleSort("fees")}>Sort by Fees</button>
-                    <button onClick={() => handleSort("userReviews")}>
-                        Sort by User Reviews
+                    <button
+                        onClick={() => handleSort("rank")}
+                        className={sortKey === "rank" ? "active-sort" : ""}
+                    >
+                        Sort by CD Rank {sortKey === "rank" && (sortOrder === "asc" ? "↑" : "↓")}
+                    </button>
+                    <button
+                        onClick={() => handleSort("rating")}
+                        className={sortKey === "rating" ? "active-sort" : ""}
+                    >
+                        Sort by Rating {sortKey === "rating" && (sortOrder === "asc" ? "↑" : "↓")}
+                    </button>
+                    <button
+                        onClick={() => handleSort("fees")}
+                        className={sortKey === "fees" ? "active-sort" : ""}
+                    >
+                        Sort by Fees {sortKey === "fees" && (sortOrder === "asc" ? "↑" : "↓")}
+                    </button>
+                    <button
+                        onClick={() => handleSort("userReviews")}
+                        className={sortKey === "userReviews" ? "active-sort" : ""}
+                    >
+                        Sort by User Reviews {sortKey === "userReviews" && (sortOrder === "asc" ? "↑" : "↓")}
                     </button>
                 </div>
             </div>
