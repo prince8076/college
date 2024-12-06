@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import collegeData from "../data/colleges.json";
 import "./CollegeTable.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const CollegeTable = () => {
     const [colleges, setColleges] = useState([]);
@@ -83,34 +85,34 @@ const CollegeTable = () => {
                             <td className="cd-rank">{college.rank}</td>
                             <td>
                                 <div className="college-logo-container">
+                                    {college.featured && (
+                                        <div className="trapezium-flag">Featured</div>
+                                    )}
                                     <img
                                         src={college.logo}
                                         alt={`${college.name} logo`}
                                         className="college-logo"
                                     />
-                                    {college.featured && (
-                                        <div className="trapezium-flag">Featured</div>
-                                    )}
-                                </div>
-                                <div className="college-info">
-                                    <h3>{college.name}</h3>
-                                    <p>{college.location}</p>
-                                    <span className="course-badge">{college.course} <p>{college.cutoff}</p></span>
-
-                                    <div className="actions">
-                                        <a href="#" className="apply-btn">
-                                            Apply Now
-                                        </a>
-                                        <a href="#" className="download-link">
-                                            Download Brochure
-                                        </a>
-                                        <label>
-                                            <input type="checkbox" /> Add to Compare
-                                        </label>
+                                    <div className="college-info">
+                                        <h3>{college.name}</h3>
+                                        <p>{college.location}</p>
+                                        <span className="course-badge">
+                                            {college.course} <p>{college.cutoff}</p>
+                                        </span>
+                                        <div className="actions">
+                                            <a href="#" className="apply-btn">
+                                                <FontAwesomeIcon icon={faArrowRight} /> Apply Now
+                                            </a>
+                                            <a href="#" className="download-link">
+                                                <FontAwesomeIcon icon={faArrowDown} /> Download Brochure
+                                            </a>
+                                            <label>
+                                                <input type="checkbox" /> Add to Compare
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </td>
-
                             <td>
                                 <span className="fees">{college.fees.toLocaleString()}</span>
                                 <p>BE/B.Tech </p>
