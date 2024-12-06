@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import collegeData from "../data/colleges.json";
 import "./CollegeTable.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowDown, faCheck, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faArrowDown, faCheck, faAngleDown, faArrowRightArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const CollegeTable = () => {
     const [colleges, setColleges] = useState([]);
@@ -118,7 +118,7 @@ const CollegeTable = () => {
                                 <p>BE/B.Tech </p>
                                 <p>-1st year Fees</p>
                                 <a href="#" className="compare-link">
-                                    Compare Fees
+                                    <FontAwesomeIcon icon={faArrowRightArrowLeft} /> Compare Fees
                                 </a>
                             </td>
                             <td>
@@ -131,16 +131,14 @@ const CollegeTable = () => {
                                 </span>
                                 <p>Highest Package</p>
                                 <a href="#" className="compare-link">
-                                    Compare Placement
+                                    <FontAwesomeIcon icon={faArrowRightArrowLeft} /> Compare Placement
                                 </a>
                             </td>
                             <td>
-                                {/* Orange bullet before rating */}
                                 <span className="orange-bullet">&#8226;</span>
                                 <span className="user-rating">{college.userReviews} / 10</span>
                                 <br />
                                 <p>Based on {college.reviewCount} User Reviews</p>
-                                {/* Best in Social Life with icons */}
                                 <p className="social-life">
                                     <FontAwesomeIcon icon={faCheck} /> Best in Social Life{" "}
                                     <FontAwesomeIcon icon={faAngleDown} />
