@@ -141,9 +141,12 @@ const CollegeTable = () => {
                                 <br />
                                 <p>Based on {college.reviewCount} User Reviews</p>
                                 <p className="social-life">
+                                    <div className="triangle-left"></div>
                                     <FontAwesomeIcon icon={faCheck} /> Best in Social Life{" "}
                                     <FontAwesomeIcon icon={faAngleDown} />
+                                    <div className="triangle-right-1"></div>
                                 </p>
+
                             </td>
                             <td>
                                 <p>{college.ranking}/<span className="outOfRank">{college.outOfRank}</span> in India</p>
@@ -158,16 +161,18 @@ const CollegeTable = () => {
 
 
                                 <div className="more-info">
-                                    <div className="logos-container">
-                                        <img src={college.source} alt="Logo 1" className="logo" />
-                                        <img src={college.source} alt="Logo 2" className="logo" />
-                                        <img src={college.source} alt="Logo 3" className="logo" />
-                                    </div>
                                     <div className="more-info-container">
+                                        <div className="logos-container">
+                                            <img src={college.source} alt="Logo 1" className="logo" />
+                                            <img src={college.source} alt="Logo 2" className="logo" />
+                                            <img src={college.source} alt="Logo 3" className="logo" />
+                                        </div>
                                         <p>+10 More</p>
                                         <FontAwesomeIcon icon={faAngleDown} className="triangle-icon" />
+                                        <div className="triangle-right"></div>
                                     </div>
                                 </div>
+
 
 
 

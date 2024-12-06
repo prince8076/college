@@ -30,9 +30,9 @@
 }
 
 .college-logo-container {
-  display: flex; 
-  align-items: center; 
-  gap: 15px; 
+  display: flex;
+  align-items: center;
+  gap: 15px;
   position: relative;
 }
 
@@ -125,10 +125,11 @@
   font-weight: bold;
 }
 
-.apply-btn, .download-link {
+.apply-btn,
+.download-link {
   display: flex;
   align-items: center;
-  gap: 8px; 
+  gap: 8px;
   color: #ff5722;
   text-decoration: none;
   font-weight: bold;
@@ -171,12 +172,38 @@
   font-size: 14px;
   background-color: #FFF9E4;
   color: #C86C80;
-  border-radius: 10px;
+  position: relative;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+.triangle-left,
+.triangle-right-1 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.triangle-left {
+  left: -15px;
+  border-top: 14px solid transparent;
+  border-right: 18px solid #FFF9E4;
+  border-bottom: 14px solid transparent;
+}
+
+.triangle-right-1 {
+  right: -15px;
+  border-top: 14px solid transparent;
+  border-left: 18px solid #FFF9E4;
+  border-bottom: 14px solid transparent;
 }
 
 .social-life svg {
   margin: 0 5px;
 }
+
 
 .rating-circle {
   display: inline-block;
@@ -195,8 +222,6 @@
   border-radius: 4px;
   font-size: 12px;
 }
-
-
 
 .sort-buttons {
   margin-bottom: 15px;
@@ -239,7 +264,6 @@
   padding: 10px;
 }
 
-
 .college-source {
   display: flex;
   justify-content: center;
@@ -248,16 +272,16 @@
 }
 
 .college-source-logo {
-  width: 40px; /* Set a fixed width */
-  height: auto; /* Maintain aspect ratio */
+  width: 40px;
+  height: auto;
   border-radius: 4px;
-  object-fit: contain; /* Ensure the image fits within the defined area */
-  border: 2px solid #007b83; /* Optional: Add a border around the logo */
+  object-fit: contain;
+  border: 2px solid #007b83;
   padding: 4px;
 }
 
 .outOfRank {
-  color: orange; 
+  color: orange;
   font-weight: bold;
 }
 
@@ -271,48 +295,61 @@
 .logos-container {
   position: relative;
   display: flex;
-  margin-right: 10px; /* Space between logos and rectangle */
+  margin-right: 10px;
 }
 
 .logo {
   width: 20px;
   height: 20px;
-  margin-left: -8px; /* Overlap logos */
+  margin-left: -8px;
   z-index: 2;
 }
 
 .more-info-container {
-  background-color: #eaf9fe; /* Light blue background */
+  background-color: #eaf9fe;
   padding: 6px 12px;
   color: #42aee8;
-  border-left: 2px solid #42aee8; /* Blue border on the left */
+  border-left: 2px solid #42aee8;
   display: flex;
   align-items: center;
   position: relative;
-  border-radius: 5px;
+  border-radius:3px;
+}
+
+.logos-container {
+  display: flex;
+  position: relative;
+  left: -10px;
+  z-index: 2;
+  left: -2px;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: -8px;
+}
+
+.more-info-container p {
+  margin: 0;
+  margin-left: 30px;
 }
 
 .triangle-icon {
-  margin-left: 10px;
-  font-size: 18px;
+  margin-left: 5px;
 }
 
 .triangle-right {
   width: 0;
   height: 0;
-  border-top: 18px solid transparent;
-  border-left: 22px solid #eaf9fe; /* Matching color with background */
-  border-bottom: 18px solid transparent;
+  border-top: 16px solid transparent;
+  border-left: 24px solid #eaf9fe;
+  border-bottom: 16px solid transparent;
   position: absolute;
-  right: -22px; /* Align triangle with the rectangle */
+  right: -22px;
   top: 50%;
   transform: translateY(-50%);
 }
-
-.more-info p {
-  margin: 0;
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -325,5 +362,66 @@
   .actions {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .college-logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .college-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .college-info h3 {
+    font-size: 14px;
+  }
+
+  .more-info-container {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 16px;
+    height: 16px;
+    margin-right: -6px;
+  }
+
+  .more-info-container p {
+    margin-left: 20px;
+  }
+
+  .college-table .college-logo-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .college-table th {
+    font-size: 12px;
+  }
+
+  .college-table td {
+    font-size: 12px;
+  }
+
+  .college-table th,
+  .college-table td {
+    padding: 10px;
+  }
+
+  .sort-buttons {
+    flex-direction: column;
+  }
+
+  .sort-buttons button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .search-input {
+    width: 100%;
   }
 }
