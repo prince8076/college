@@ -66,6 +66,7 @@ const CollegeTable = () => {
                     <button onClick={() => handleSort("userReviews")}>
                         Sort by User Reviews
                     </button>
+                    <button onClick={() => handleSort("rank")}>Sort by CD Rank</button> {/* Added CD Rank Sort Button */}
                 </div>
             </div>
             <table className="college-table">
@@ -145,9 +146,35 @@ const CollegeTable = () => {
                                 </p>
                             </td>
                             <td>
-                                <p>{college.ranking}</p>
-                                <p>{college.source}</p>
+                                <p>{college.ranking}/<span className="outOfRank">{college.outOfRank}</span> in India</p>
+                                <div className="college-source">
+                                    <img
+                                        src={college.source}
+                                        alt={`${college.source} logo`}
+                                        className="college-source-logo"
+                                    />
+                                    <p>{college.year}</p>
+                                </div>
+
+
+                                <div className="more-info">
+                                    <div className="logos-container">
+                                        <img src={college.source} alt="Logo 1" className="logo" />
+                                        <img src={college.source} alt="Logo 2" className="logo" />
+                                        <img src={college.source} alt="Logo 3" className="logo" />
+                                    </div>
+                                    <div className="more-info-container">
+                                        <p>+10 More</p>
+                                        <FontAwesomeIcon icon={faAngleDown} className="triangle-icon" />
+                                    </div>
+                                </div>
+
+
+
+
                             </td>
+
+
                         </tr>
                     ))}
                 </tbody>

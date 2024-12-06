@@ -33,14 +33,14 @@
   display: flex; 
   align-items: center; 
   gap: 15px; 
-  position: relative; /* Ensure this is relative for absolute positioning of the flag */
+  position: relative;
 }
 
 .trapezium-flag {
-  display: none; /* Initially hidden */
+  display: none;
   position: absolute;
-  top: -25px; /* Adjust to position it above the college name */
-  left: 0; /* Align it to the left of the container */
+  top: -25px;
+  left: 0;
   background: #f04e30;
   color: white;
   font-size: 10px;
@@ -53,7 +53,7 @@
 }
 
 .college-logo-container:hover .trapezium-flag {
-  display: block; /* Make it visible when hovering over the college container */
+  display: block;
 }
 
 .college-logo {
@@ -65,7 +65,7 @@
 
 .college-info {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .college-info h3 {
@@ -196,15 +196,7 @@
   font-size: 12px;
 }
 
-.more-rankings {
-  display: inline-block;
-  padding: 4px 8px;
-  background: #eaf3f5;
-  color: #007b83;
-  border-radius: 4px;
-  font-size: 12px;
-  cursor: pointer;
-}
+
 
 .sort-buttons {
   margin-bottom: 15px;
@@ -246,6 +238,81 @@
   color: #555;
   padding: 10px;
 }
+
+
+.college-source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.college-source-logo {
+  width: 40px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px;
+  object-fit: contain; /* Ensure the image fits within the defined area */
+  border: 2px solid #007b83; /* Optional: Add a border around the logo */
+  padding: 4px;
+}
+
+.outOfRank {
+  color: orange; 
+  font-weight: bold;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.logos-container {
+  position: relative;
+  display: flex;
+  margin-right: 10px; /* Space between logos and rectangle */
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-left: -8px; /* Overlap logos */
+  z-index: 2;
+}
+
+.more-info-container {
+  background-color: #eaf9fe; /* Light blue background */
+  padding: 6px 12px;
+  color: #42aee8;
+  border-left: 2px solid #42aee8; /* Blue border on the left */
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.triangle-icon {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-left: 22px solid #eaf9fe; /* Matching color with background */
+  border-bottom: 18px solid transparent;
+  position: absolute;
+  right: -22px; /* Align triangle with the rectangle */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.more-info p {
+  margin: 0;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

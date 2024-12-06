@@ -12,8 +12,10 @@
     "reviewCount": 289,
     "cutoff": "JEE-Advanced 2023 Cutoff: 144",
     "placement": "Top Placements",
-    "ranking": "#37/131 in India (2023)",
-    "source": "NIRF",
+    "ranking": "#37th",
+    "outOfRank": 131,
+    "year":"2023",
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
     "featured": false
   },
   {
@@ -29,8 +31,10 @@
     "reviewCount": 485,
     "cutoff": "JEE-Advanced 2023 Cutoff: 115",
     "placement": "Excellent Placements",
-    "ranking": "#1st/35 in India (2023)",
-    "source": "India Today",
+    "ranking": "#1st",
+    "outOfRank": 35,
+    "year":"2015",
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
     "featured": true
   },
   {
@@ -46,8 +50,10 @@
     "reviewCount": 802,
     "cutoff": "JEE-Advanced 2023 Cutoff: 66",
     "placement": "Good Placements",
-    "ranking": "#99th/147 in India (2019)",
-    "source": "NIRF",
+    "ranking": "#99th",
+    "outOfRank": 147,
+    "year":"2011",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_news.svg",
     "featured": true
   },
   {
@@ -63,8 +69,10 @@
     "reviewCount": 390,
     "cutoff": "JEE-Advanced 2023 Cutoff: 135",
     "placement": "Excellent Placements",
-    "ranking": "#3rd/131 in India (2023)",
-    "source": "NIRF",
+    "ranking": "#3rd",
+    "outOfRank": 131,
+    "year":"2013",
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
     "featured": false
   },
   {
@@ -80,8 +88,10 @@
     "reviewCount": 150,
     "cutoff": "BITSAT 2023 Cutoff: 290",
     "placement": "Good Placements",
-    "ranking": "#15/131 in India (2023)",
-    "source": "India Today",
+    "ranking": "#15th",
+    "outOfRank": 131,
+    "year":"2011",
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
     "featured": false
   },
   {
@@ -97,8 +107,10 @@
     "reviewCount": 300,
     "cutoff": "JEE-Mains 2023 Cutoff: 97",
     "placement": "Good Placements",
-    "ranking": "#10/131 in India (2023)",
-    "source": "NIRF",
+    "ranking": "#10th",
+    "outOfRank": 131,
+    "year": "2015",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_news.svg",
     "featured": false
   },
   {
@@ -114,8 +126,10 @@
     "reviewCount": 115,
     "cutoff": "SNUSAT 2023 Cutoff: 235",
     "placement": "Excellent Placements",
-    "ranking": "#50/131 in India (2023)",
-    "source": "India Today",
+    "ranking": "#50th",
+    "outOfRank": 131,
+    "year":"2018",
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
     "featured": false
   },
   {
@@ -131,8 +145,10 @@
     "reviewCount": 230,
     "cutoff": "VITEEE 2023 Cutoff: 220",
     "placement": "Good Placements",
-    "ranking": "#12/131 in India (2023)",
-    "source": "India Today",
+    "ranking": "#12th",
+    "outOfRank": 131,
+    "year":"2023",
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
     "featured": false
   },
   {
@@ -148,8 +164,10 @@
     "reviewCount": 500,
     "cutoff": "Amity JEE 2023 Cutoff: 190",
     "placement": "Average Placements",
-    "ranking": "#20/131 in India (2023)",
-    "source": "India Today",
+    "ranking": "#20th",
+    "outOfRank": 131,
+    "year":"2024",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_news.svg",
     "featured": true
   },
   {
@@ -165,8 +183,10 @@
     "reviewCount": 400,
     "cutoff": "SRMJEEE 2023 Cutoff: 230",
     "placement": "Good Placements",
-    "ranking": "#18/131 in India (2023)",
-    "source": "NIRF",
+    "ranking": "#18th",
+    "outOfRank": 131,
+    "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "year":"2015",
     "featured": false
   }
 ]
