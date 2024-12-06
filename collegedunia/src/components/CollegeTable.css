@@ -164,9 +164,30 @@
   color: #3EAE8D;
 }
 
+
 .user-rating {
   font-weight: bold;
   color: black;
+}
+
+.orange-bullet {
+  color: orange;
+  font-size: 30px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.social-life {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  background-color: #FFF9E4;
+  color: #C86C80;
+  border-radius: 10px;
+}
+
+.social-life svg {
+  margin: 0 5px;
 }
 
 .rating-circle {

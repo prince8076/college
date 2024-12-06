@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import collegeData from "../data/colleges.json";
 import "./CollegeTable.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faArrowDown, faCheck, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
 const CollegeTable = () => {
     const [colleges, setColleges] = useState([]);
@@ -135,8 +135,16 @@ const CollegeTable = () => {
                                 </a>
                             </td>
                             <td>
+                                {/* Orange bullet before rating */}
+                                <span className="orange-bullet">&#8226;</span>
                                 <span className="user-rating">{college.userReviews} / 10</span>
+                                <br />
                                 <p>Based on {college.reviewCount} User Reviews</p>
+                                {/* Best in Social Life with icons */}
+                                <p className="social-life">
+                                    <FontAwesomeIcon icon={faCheck} /> Best in Social Life{" "}
+                                    <FontAwesomeIcon icon={faAngleDown} />
+                                </p>
                             </td>
                             <td>
                                 <p>{college.ranking}</p>
