@@ -142,7 +142,7 @@ const CollegeTable = () => {
                                 <p>Based on {college.reviewCount} User <br /> Reviews</p>
                                 <p className="social-life">
                                     <div className="triangle-left"></div>
-                                    <FontAwesomeIcon icon={faCheck} /> Best in Social Life{" "}
+                                    <FontAwesomeIcon icon={faCheck} /> {college.life}{" "}
                                     <FontAwesomeIcon icon={faAngleDown} />
                                     <div className="triangle-right-1"></div>
                                 </p>
@@ -167,19 +167,12 @@ const CollegeTable = () => {
                                             <img src={college.source} alt="Logo 2" className="logo" />
                                             <img src={college.source} alt="Logo 3" className="logo" />
                                         </div>
-                                        <p>+10 More</p>
+                                        <p>{college.reviewNo}</p>
                                         <FontAwesomeIcon icon={faAngleDown} className="triangle-icon" />
                                         <div className="triangle-right"></div>
                                     </div>
                                 </div>
-
-
-
-
-
                             </td>
-
-
                         </tr>
                     ))}
                 </tbody>

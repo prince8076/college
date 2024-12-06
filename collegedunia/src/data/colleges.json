@@ -16,6 +16,8 @@
     "outOfRank": 131,
     "year":"2023",
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "reviewNo":9,
+    "life":"best infrastructure",
     "featured": false
   },
   {
@@ -35,6 +37,8 @@
     "outOfRank": 35,
     "year":"2015",
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "life":"best infrastructure",
+    "reviewNo":9,
     "featured": true
   },
   {
@@ -54,6 +58,8 @@
     "outOfRank": 147,
     "year":"2011",
     "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_news.svg",
+    "life":"best class",
+    "reviewNo":10,
     "featured": true
   },
   {
@@ -73,6 +79,8 @@
     "outOfRank": 131,
     "year":"2013",
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "life":"Best in Social Life",
+    "reviewNo":2,
     "featured": false
   },
   {
@@ -92,6 +100,8 @@
     "outOfRank": 131,
     "year":"2011",
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "reviewNo":12,
+    "life":"Best in Social Life",
     "featured": false
   },
   {
@@ -111,6 +121,8 @@
     "outOfRank": 131,
     "year": "2015",
     "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_news.svg",
+    "reviewNo":9,
+    "life":"Best in Social Life",
     "featured": false
   },
   {
@@ -130,6 +142,8 @@
     "outOfRank": 131,
     "year":"2018",
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "reviewNo":10,
+    "life":"Best in Social Life",
     "featured": false
   },
   {
@@ -149,6 +163,8 @@
     "outOfRank": 131,
     "year":"2023",
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "reviewNo":9,
+    "life":"Best infrastructure",
     "featured": false
   },
   {
@@ -168,6 +184,8 @@
     "outOfRank": 131,
     "year":"2024",
     "source": "https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_news.svg",
+    "reviewNo":9,
+    "life":"Best infrastructure",
     "featured": true
   },
   {
@@ -186,7 +204,9 @@
     "ranking": "#18th",
     "outOfRank": 131,
     "source": "https://banner2.cleanpng.com/20180529/lbh/avpq8fgzf.webp",
+    "reviewNo":9,
     "year":"2015",
+    "life":"Best infrastructure",
     "featured": false
   }
 ]
