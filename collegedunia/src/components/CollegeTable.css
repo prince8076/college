@@ -266,8 +266,6 @@
 
 .college-source {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 10px;
 }
 
@@ -276,8 +274,7 @@
   height: auto;
   border-radius: 4px;
   object-fit: contain;
-  border: 2px solid #007b83;
-  padding: 4px;
+  margin-top: -5px;
 }
 
 .outOfRank {

@@ -139,7 +139,7 @@ const CollegeTable = () => {
                                 <span className="orange-bullet">&#8226;</span>
                                 <span className="user-rating">{college.userReviews} / 10</span>
                                 <br />
-                                <p>Based on {college.reviewCount} User Reviews</p>
+                                <p>Based on {college.reviewCount} User <br /> Reviews</p>
                                 <p className="social-life">
                                     <div className="triangle-left"></div>
                                     <FontAwesomeIcon icon={faCheck} /> Best in Social Life{" "}
