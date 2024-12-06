@@ -110,9 +110,11 @@ const CollegeTable = () => {
                                     </div>
                                 </div>
                             </td>
+
                             <td>
                                 <span className="fees">{college.fees.toLocaleString()}</span>
-                                <p>MBA/PGDM - total fees</p>
+                                <p>BE/B.Tech </p>
+                                <p>-1st year Fees</p>
                                 <a href="#" className="compare-link">
                                     Compare Fees
                                 </a>
